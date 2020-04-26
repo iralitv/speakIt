@@ -62,7 +62,6 @@ module.exports = {
       },
     ],
   },
-  watch: true,
   plugins: [
     new HtmlWebpackPlugin({
       hash: true,
