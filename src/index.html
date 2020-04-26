@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title><%= htmlWebpackPlugin.options.title %></title>
+  <link href="https://fonts.googleapis.com/css2?family=Jura&display=swap" rel="stylesheet">
+</head>
+<body>
+<main class="main">
+  <div class="intro">
+    <h1 class="intro__title">SpeakIt</h1>
+    <p class="intro__text">You should tell words into microphone</p>
+    <a href="#" class="btn btn__intro">Start</a>
+  </div>
+  <div class="speak">
+    <section class="level radio-toolbar">
+      <p class="level__text">Select level </p>
+      <input type="radio" id="level0" name="levels" value="0" checked>
+      <label class="level__label" for="level0">0</label>
+      <input type="radio" id="level1" name="levels" value="1">
+      <label class="level__label" for="level1">1</label>
+      <input type="radio" id="level2" name="levels" value="2">
+      <label class="level__label" for="level2">2</label>
+      <input type="radio" id="level3" name="levels" value="3">
+      <label class="level__label" for="level3">3</label>
+      <input type="radio" id="level4" name="levels" value="4">
+      <label class="level__label" for="level4">4</label>
+      <input type="radio" id="level5" name="levels" value="5">
+      <label class="level__label" for="level5">5</label>
+    </section>
+    <section class="word">
+      <img class="word__img" src="" alt="">
+      <p class="word__translation"></p>
+      <p class="word__recognition"></p>
+      <div class="word__items items"></div>
+    </section>
+    <section class="btns">
+      <a href="#" class="btn btn__restart">Restart</a>
+      <a href="#" class="btn btn__speak">Speak</a>
+      <a href="#" class="btn btn__results">Results</a>
+    </section>
+  </div>
+  <div class="results visually-hidden">
+    <div class="results__table">
+      <p class="correct__text">Correct <span class="correct__count"></span></p>
+      <div class="correct__items"></div>
+      <p class="error__text">Error <span class="error__count"></span></p>
+      <div class="error__items"></div>
+      <div class="btns">
+        <a href="" class="btn btn__return">Return</a>
+        <a href="" class="btn btn__new-game">New game</a>
+      </div>
+    </div>
+  </div>
+</main>
+</body>
+</html>
